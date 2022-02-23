@@ -7,7 +7,7 @@ const BoxMenuItems = ({ itemMenu, nameItems }) => {
   return (
       <Box pl='1rem' pr='1rem'>
           <hr />
-        <Text fontWeight='700'>{ nameItems.name }</Text>
+        <Text fontWeight='700'>{ nameItems }</Text>
         {
             itemMenu.map( (item, index) => (
                 <Flex key={ index }>
