@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin-left: 1rem;
+  font-weight: 500;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu a:hover {
+  color: rgb(175, 58, 58);
+}
