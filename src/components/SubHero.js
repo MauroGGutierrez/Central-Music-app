@@ -4,7 +4,7 @@ import PinkImg from "../img/img-pink2.png"
 
 const SubHero = () => {
   return (
-    <Box w="auto" h="40vh" bgImage={`url(${PinkImg})`} bgImage_filter="brightness(0.4)" bgSize="cover" bgPosition="center" bgRepeat="no-repeat" mt="155px" ml="60px" mr="60px" borderRadius="0.5rem" display="flex" justifyContent="center" alignItems="center">
+    <Box w="auto" h="40vh" bgImage={`url(${PinkImg})`} bgSize="cover" bgPosition="center" bgRepeat="no-repeat" mt="155px" ml="60px" mr="60px" borderRadius="0.5rem" display="flex" justifyContent="center" alignItems="center">
       <Box textAlign="center" w="40%">
       <Heading fontSize="2.7rem" color="white" >FREE GUITAR LESSONS! </Heading>
       <Heading fontSize="1.5rem" color="white" fontWeight="400">Purchase any guitar over $499.99 and recieve a one-hour guitar lesson free. </Heading>
