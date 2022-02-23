@@ -1,4 +1,4 @@
-import { Box, Heading, Spacer} from '@chakra-ui/react'
+import { Box, Heading } from '@chakra-ui/react'
 import React from 'react'
 import bgImage from "../img/hero.png"
 import NavHeader from './NavHeader'

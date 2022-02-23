@@ -11,7 +11,6 @@ import LocAndHours from './pages/LocAndHours'
 import Rentals from './pages/Rentals'
 import PrivacyNotice from './pages/PrivacyNotice'
 import PageNotFound from './pages/PageNotFound'
-
 import Accessories from "./pages/Accessories";
 import Guitars from "./pages/Guitars";
 import Repairs from "./pages/Repairs";
@@ -19,7 +18,6 @@ import Lessons from "./pages/Lessons";
 import Storage from "./pages/Storage";
 import ShopCart from "./pages/ShopCart";
 import MyUser from "./pages/MyUser";
-import Header from "./components/Header";
 
 const App = () => {
   return (

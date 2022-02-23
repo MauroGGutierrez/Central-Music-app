@@ -19,7 +19,7 @@ const NavHeader = () => {
   return (
      <Flex w="100%" h="7rem" align="center" pt="2rem" pb="1rem">
         <Box pl="4rem">
-          <img src={imagen1}/>
+          <img src={imagen1} alt='icon-music'/>
         </Box>
       <Box p='3' color="white">
         <MenuItems menuItems={menuItems}/>

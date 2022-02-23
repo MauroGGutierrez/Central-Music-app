@@ -1,4 +1,4 @@
-import { Box, Button, Heading, position } from '@chakra-ui/react'
+import { Box, Button, Heading } from '@chakra-ui/react'
 import React from 'react'
 import PinkImg from "../img/img-pink2.png"
 
