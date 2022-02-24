@@ -1,10 +1,13 @@
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Link } from 'react-router-dom'
 
 const CardItemNew = ({ itemsCard }) => {
   return (
     <>
       {itemsCard.map((item, index) => (
+        <Link to={`/sectionproduct/${item.id}`}>
+
           <Flex key={index} 
           direction="column"
           boxShadow='0px 1px 2px 0px rgba(60, 64, 67, 0.6)'
@@ -31,6 +34,7 @@ const CardItemNew = ({ itemsCard }) => {
               <Box fontWeight='600' pl='2rem' fontSize='1.4rem'>{item.coast}</Box>
             </Flex>
           </Flex>
+        </Link>
       ))}
     </>
   );
