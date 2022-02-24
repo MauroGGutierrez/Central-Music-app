@@ -17,6 +17,7 @@ import Lessons from "./pages/Lessons";
 import Storage from "./pages/Storage";
 import ShopCart from "./pages/ShopCart";
 import MyUser from "./pages/MyUser";
+import CardItems from "./pages/CardItems";
 // import NavHeader from "./components/NavHeader";
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="/locationandhours" element={<LocAndHours />} />
           <Route path="/rentals" element={<Rentals />} />
           <Route path="/privacynotice" element={<PrivacyNotice />} />
+          <Route path="/sectionproduct:id" element={<CardItems />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
