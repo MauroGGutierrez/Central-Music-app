@@ -4,4 +4,4 @@ const actionsTypes = {
 
 }
 
-export default actionsTypes;
+export default actionsTypes

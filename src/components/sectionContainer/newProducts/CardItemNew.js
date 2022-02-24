@@ -1,14 +1,23 @@
 import React from "react";
-import { Box, Flex, Image, Text } from "@chakra-ui/react";
+import { Button, Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { setNewProducts, setProductsFinds } from '../../redux/actions/showProductsActions'
 
 const CardItemNew = ({ itemsCard }) => {
+  const showProducts = useSelector((state) => state.showProducts)
+  console.log(showProducts);
+  const dispatch = useDispatch()
+
   return (
     <>
-      {itemsCard.map((item, index) => (
-        <Link to={`/sectionproduct/${item.id}`}>
+    <Button onClick={() => dispatch(setNewProducts()) }>newProducts</Button>
+    <Button onClick={() => dispatch(setProductsFinds()) }>Product find</Button>
 
-          <Flex key={index} 
+      {itemsCard.map((item, index) => (
+        <Link to={`/sectionproduct/${item.id}`} key={index} >
+
+          <Flex 
           direction="column"
           boxShadow='0px 1px 2px 0px rgba(60, 64, 67, 0.6)'
           borderRadius='.5rem'
