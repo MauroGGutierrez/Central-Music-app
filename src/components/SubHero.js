@@ -5,8 +5,8 @@ import PinkImg from "../img/img-pink2.png";
 const SubHero = () => {
   return (
     <Box
-      w="auto"
-      h="40vh"
+      w="90%"
+      h={250}
       bgImage={`url(${PinkImg})`}
       bgSize="cover"
       bgPosition="center"
