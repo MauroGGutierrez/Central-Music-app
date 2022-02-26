@@ -12,14 +12,15 @@ const SubHero = () => {
       bgPosition="center"
       bgRepeat="no-repeat"
       mt="155px"
-      ml="60px"
-      mr="60px"
+      mx={{ base: "1.5rem", md: "4rem", xl: "4rem" }}
+      // ml="60px"
+      // mr="60px"
       borderRadius="0.5rem"
       display="flex"
       justifyContent="center"
       alignItems="center"
     >
-      <Box textAlign="center" w="40%">
+      <Box textAlign="center" w={{ base: "80", xl: "40%" }} h="auto">
         <Heading fontSize="2.7rem" color="white">
           FREE GUITAR LESSONS!{" "}
         </Heading>

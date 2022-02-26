@@ -19,6 +19,7 @@ import ShopCart from "./pages/ShopCart";
 import MyUser from "./pages/MyUser";
 import CardItems from "./pages/CardItems";
 // import NavHeader from "./components/NavHeader";
+import "normalize.css";
 
 const App = () => {
   return (
