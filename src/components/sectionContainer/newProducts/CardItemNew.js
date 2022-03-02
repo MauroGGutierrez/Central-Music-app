@@ -10,7 +10,7 @@ const CardItemNew = ({ itemsCard }) => {
   const dispatch = useDispatch()
 
   return (
-    <>
+    <Flex flexDirection={{base:"column",md:"row ",lg:"row", xl:"row"}}>
       {itemsCard.map((item, index) => (
         <Link to={`/sectionproduct/${item.id}`} key={index} onClick={() => dispatch(setNewProducts(item.id))}>
 
@@ -42,7 +42,7 @@ const CardItemNew = ({ itemsCard }) => {
           </Flex>
         </Link>
       ))}
-    </>
+    </Flex>
   );
 };
 

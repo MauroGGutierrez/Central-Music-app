@@ -10,7 +10,7 @@ const NewProducts = () => {
         <Flex direction='column' w='100%' > 
             <Box>
                 <Center>
-                    <Heading m='1rem'>New Products</Heading>
+                    <Heading m='1rem' pt="2rem" borderTop="4px solid red">New Products</Heading>
                 </Center>
                 <Flex justifyContent='center'>
                     <CardItemNew itemsCard={ newProducts } />
@@ -18,7 +18,7 @@ const NewProducts = () => {
             </Box>
             <Box>
                 <Center>
-                    <Heading m='1rem'>Popular finds</Heading>
+                    <Heading m='1rem' pt="2rem" borderTop="4px solid red">Popular finds</Heading>
                 </Center>
                 <Flex justifyContent='center' mb='1rem'>
                     <CardPopularFinds itemsCard={ popularFind }/>

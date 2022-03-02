@@ -1,23 +1,22 @@
-import React from 'react'
-import Footer from './Footer/Footer'
-import Header from './components/Header'
-import SectionContainer from './components/sectionContainer/SectionContainer'
+import React from "react";
+import Footer from "./Footer/Footer";
+import Header from "./components/Header";
+import SectionContainer from "./components/sectionContainer/SectionContainer";
 
 const Layout = () => {
   return (
     <>
-    <header>
+      <header>
         <Header />
-    </header>
-    <section>
+      </header>
+      <section>
         <SectionContainer />
-    </section>
-    <footer>
+      </section>
+      <footer>
         <Footer />
-
-    </footer>
+      </footer>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
