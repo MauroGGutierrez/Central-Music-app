@@ -6,12 +6,12 @@ const SubHero = () => {
   return (
     <Box
       w="90%"
-      h={{ base: "30vh", sm: "36vh", md: "36vh", lg: "40vh", xl: "40vh" }}
+      h={240}
       bgImage={`url(${PinkImg})`}
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
-      mt="155px"
+      mt={{base:"13rem",sm:"13rem", md:"11rem", lg:"12rem",xl:"9.68rem"}}
       mx={{ base: "6%", sm: "7%", md: "4rem", xl: "4rem" }}
       // ml="60px"
       // mr="60px"
@@ -22,12 +22,12 @@ const SubHero = () => {
     >
       <Box
         textAlign="center"
-        w={{ base: "80%", sm: "70%", md: "52%", lg: "50%", xl: "41%" }}
+        w={{ base: "70%", sm: "60%", md: "52%", lg: "52%", xl: "41%" }}
       >
         <Heading
           fontSize={{
-            base: "1.4rem",
-            sm: "2.1rem",
+            base: "1.8rem",
+            sm: "2.2rem",
             md: "2.1rem",
             lg: "2.5rem",
             xl: "2.7rem",

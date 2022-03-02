@@ -16,7 +16,7 @@ const Header = () => {
     >
       <NavHeader />
       <Box
-        w={{ base: "72%", sm: "40%", md: "50%", lg: "28rem", xl: "41%" }}
+        w={{ base: "70%", sm: "46%", md: "50%", lg: "28rem", xl: "41%" }}
         mt="140px"
         // pl={{ base: "", md: "60px", xl: "60px" }}
         ml={{ base: "15%", sm: "28%", md: "7%", lg: "7%", xl: "5%" }}
