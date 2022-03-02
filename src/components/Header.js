@@ -16,14 +16,20 @@ const Header = () => {
     >
       <NavHeader />
       <Box
-        w={{ base: "90%", md: "50%", xl: "50%" }}
+        w={{ base: "72%", sm: "40%", md: "50%", lg: "28rem", xl: "41%" }}
         mt="140px"
-        pl={{ base: "4rem", md: "60px", xl: "60px" }}
-        pr="auto"
+        // pl={{ base: "", md: "60px", xl: "60px" }}
+        ml={{ base: "15%", sm: "28%", md: "7%", lg: "7%", xl: "5%" }}
         textAlign={{ base: "center", md: "left", xl: "left" }}
       >
         <Heading
-          fontSize={{ base: "2rem", md: "3.7rem", xl: "3.9rem" }}
+          fontSize={{
+            base: "2.1rem",
+            sm: "2.2rem",
+            md: "3.4rem",
+            lg: "3.5rem",
+            xl: "3.9rem",
+          }}
           color="white"
         >
           Fullfilling dreams with strings attached
