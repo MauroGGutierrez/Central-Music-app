@@ -1,7 +1,9 @@
 import React from 'react'
 import { Box, Center, Flex, Heading } from '@chakra-ui/react'
-import { newProducts, popularFind  } from '../../DataItems'
-import CardItemNew from './CardItemNew'
+import newProducts from '../dataItems/DataNewProducts'
+import popularFind from '../dataItems/DataPopularFinds'
+import CardItemNew from './newProducts/CardItemNew'
+import CardPopularFinds from './productsFinds/CardPopularlFinds'
 
 const NewProducts = () => {
     return (
@@ -19,7 +21,7 @@ const NewProducts = () => {
                     <Heading m='1rem'>Popular finds</Heading>
                 </Center>
                 <Flex justifyContent='center' mb='1rem'>
-                    <CardItemNew itemsCard={ popularFind }/>
+                    <CardPopularFinds itemsCard={ popularFind }/>
                 </Flex>
             </Box>
     </Flex>

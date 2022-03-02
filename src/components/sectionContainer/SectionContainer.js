@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/react'
 import React from 'react'
-import NewProducts from './newProducts/NewProducts'
+import NewProducts from './NewProducts'
 
 const SectionContainer = () => {
   return (
