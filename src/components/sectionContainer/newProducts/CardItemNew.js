@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const CardItemNew = ({ itemsCard }) => {
   return (
-    <>
+    <Flex flexDirection={{base:"column",md:"row ",lg:"row", xl:"row"}}>
       {itemsCard.map((item, index) => (
         <Link to={`/sectionproduct/${item.id}`}>
 
@@ -36,7 +36,7 @@ const CardItemNew = ({ itemsCard }) => {
           </Flex>
         </Link>
       ))}
-    </>
+    </Flex>
   );
 };
 
