@@ -9,12 +9,12 @@ const Layout = () => {
       <header>
         <Header />
       </header>
-      {/* <section>
+      <section>
         <SectionContainer />
-      </section> */}
-      {/* <footer>
+      </section>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 };
