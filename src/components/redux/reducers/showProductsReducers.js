@@ -1,6 +1,15 @@
 import actionsTypes from "../actions/actionsTypes";
 
-export const showProductsReducers = ( state = {}, action  ) => {
+const initialItemData = {
+    id: '',
+    name: '',
+    description: '',
+    coast: '',
+    colors: '',
+    img: '',
+}
+
+export const showProductsReducers = ( state = initialItemData , action  ) => {
     switch (action.type) {
         case actionsTypes.SHOW_NEW_PRODUCTS:
             return { status: action.payload }

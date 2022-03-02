@@ -2,17 +2,18 @@ import React from "react";
 import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { setNewProducts } from '../../redux/actions/showProductsActions'
+import { setProductsFinds } from '../../redux/actions/showProductsActions'
 
-const CardItemNew = ({ itemsCard }) => {
+const CardPopularlFinds = ({ itemsCard }) => {
   const showProducts = useSelector((state) => state.showProduct)
   console.log(showProducts);
   const dispatch = useDispatch()
 
   return (
     <>
+
       {itemsCard.map((item, index) => (
-        <Link to={`/sectionproduct/${item.id}`} key={index} onClick={() => dispatch(setNewProducts(item.id))}>
+        <Link to={`/sectionproduct/${item.id}`} key={index} onClick={() => dispatch(setProductsFinds(item.id)) }>
 
           <Flex 
           direction="column"
@@ -46,4 +47,4 @@ const CardItemNew = ({ itemsCard }) => {
   );
 };
 
-export default CardItemNew;
+export default CardPopularlFinds;
