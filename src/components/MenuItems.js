@@ -2,16 +2,18 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import "./MenuItems.css"
+import { Flex } from "@chakra-ui/react";
 
 const MenuItems = ({ menuItems }) => {
+
   return (
-    <ul className="menu">
+    <Flex className="menu">
       {menuItems.map((item) => (
         <li key={item.link}>
           <Link to={item.link}>{item.name}</Link>
         </li>
       ))}
-    </ul>
+    </Flex>
   );
 };
 
