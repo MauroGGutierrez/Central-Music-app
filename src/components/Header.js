@@ -1,4 +1,4 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 import bgImage from "../img/hero.png";
 import NavHeader from "./NavHeader";
@@ -8,14 +8,30 @@ const Header = () => {
   return (
     <Box
       bgImage={`url(${bgImage})`}
-      w="100%"
+      w={useBreakpointValue({ base: "100%", xl: "100%" })}
       h="50rem"
       bgSize="cover"
-      mb="8rem"
+      bgPosition="center"
+      mb={{ base: "1rem", xl: "8rem" }}
     >
       <NavHeader />
-      <Box w="50%" mt="140px" pl="60px">
-        <Heading fontSize="3.9rem" color="white">
+      <Box
+        w={{ base: "72%", sm: "40%", md: "50%", lg: "28rem", xl: "41%" }}
+        mt="140px"
+        // pl={{ base: "", md: "60px", xl: "60px" }}
+        ml={{ base: "15%", sm: "28%", md: "7%", lg: "7%", xl: "5%" }}
+        textAlign={{ base: "center", md: "left", xl: "left" }}
+      >
+        <Heading
+          fontSize={{
+            base: "2.1rem",
+            sm: "2.2rem",
+            md: "3.4rem",
+            lg: "3.5rem",
+            xl: "3.9rem",
+          }}
+          color="white"
+        >
           Fullfilling dreams with strings attached
         </Heading>
       </Box>
