@@ -16,16 +16,16 @@ const Header = () => {
     >
       <NavHeader />
       <Box
-        w={{ base: "70%", sm: "46%", md: "50%", lg: "28rem", xl: "41%" }}
+        w={{ base: "70%", sm: "20rem", md: "50%", lg: "28rem", xl: "41%" }}
         mt="140px"
         // pl={{ base: "", md: "60px", xl: "60px" }}
-        ml={{ base: "15%", sm: "28%", md: "7%", lg: "7%", xl: "5%" }}
+        ml={{ base: "15%", sm: "24%", md: "7%", lg: "7%", xl: "5%" }}
         textAlign={{ base: "center", md: "left", xl: "left" }}
       >
         <Heading
           fontSize={{
             base: "2.1rem",
-            sm: "2.2rem",
+            sm: "2.5rem",
             md: "3.4rem",
             lg: "3.5rem",
             xl: "3.9rem",
