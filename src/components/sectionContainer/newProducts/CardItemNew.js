@@ -3,6 +3,7 @@ import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { setNewProducts } from '../../redux/actions/showProductsActions'
+import guitarFour from "../../../img/guitar4.png"
 
 const CardItemNew = ({ itemsCard }) => {
   const showProducts = useSelector((state) => state.showProduct)
@@ -43,6 +44,7 @@ const CardItemNew = ({ itemsCard }) => {
         </Link>
       ))}
     </Flex>
+    
   );
 };
 

@@ -10,8 +10,7 @@ const CardPopularlFinds = ({ itemsCard }) => {
   const dispatch = useDispatch()
 
   return (
-    <>
-
+    <Flex flexDirection={{base:"column",md:"row ",lg:"row", xl:"row"}} >
       {itemsCard.map((item, index) => (
         <Link to={`/sectionproduct/${item.id}`} key={index} onClick={() => dispatch(setProductsFinds(item.id)) }>
 
@@ -43,7 +42,7 @@ const CardPopularlFinds = ({ itemsCard }) => {
           </Flex>
         </Link>
       ))}
-    </>
+    </Flex>
   );
 };
 
